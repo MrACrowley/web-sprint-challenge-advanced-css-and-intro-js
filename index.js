@@ -216,9 +216,9 @@ function thirdArtist(arr){
 }
 console.log(artists[2].bio)
 // // /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-let correction=("Vincent Van Gogh")
+artists[8].name=("Vincent Van Gogh")
 
-console.log(correction)
+console.log(artists[8].name)
 
 // /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
 //  *     (1) artists array
@@ -229,9 +229,9 @@ console.log(correction)
 //  * it will return `The artist at index 0 is Amedeo Modigliani`.
 // */
 function getArtistByIndex(array,index) {
-  return `The artist at index &{array[index].id} is &{array[index].name}`
+  return `The artist at index ${array[index].id} is ${array[index].name}`
   }
-  console.log(getArtistByIndex,(artists[8]))
+  console.log(getArtistByIndex(artists,8))
   
 
 
@@ -259,10 +259,11 @@ console.log(get20s(artists))
 //  * 
 //  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 // */
-function removeArtist(arr){
-    artists.shift();
+function removeArtist(arr,index){
+     arr.splice(index,1);
+  return arr.length
   }
-  console.log(artists,0);
+  console.log(removeArtist(artists,19));
  
 
 /**
