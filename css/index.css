@@ -131,6 +131,35 @@ button:hover{
     width:40%;
     text-align:center;
 }
+
+
 .artist img{
     width:100%;
+}
+
+@media (max-width: 500px){
+    .title-container{
+        justify-content: space-around;
+       height: 10%;
+    }
+    .artists-container{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-around;
+    width: fit-content;
+    height: 100%;
+    margin: 25%;
+    margin-top: 5%;
+    }
+    .artist{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .artist img{
+        height: auto;
+    }
 }
