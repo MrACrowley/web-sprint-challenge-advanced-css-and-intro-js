@@ -152,10 +152,14 @@ button:hover{
     margin-top: 5%;
     }
     .artist{
-        width: 125%;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
         text-align: center;
-        margin-right: 150%;
     }
-
+    .artist img{
+        height: auto;
+    }
 }
